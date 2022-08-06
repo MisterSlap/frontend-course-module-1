@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 60px;
+  height: 150px;
+
+  background-color: $text_color;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+
+    p {
+      margin-left: 22px;
+    }
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 36px;
+      text-align: right;
+      color: #ffffff;
+    }
+  }
+}

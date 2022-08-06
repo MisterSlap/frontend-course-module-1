@@ -1,0 +1,28 @@
+@import 'reset';
+@import 'variables';
+@import 'mixin/mixin';
+
+@import 'header';
+@import 'menu';
+@import 'about';
+@import 'main';
+@import 'company';
+@import 'portfolio';
+@import 'faq';
+@import 'footer';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  @include title-text;
+}

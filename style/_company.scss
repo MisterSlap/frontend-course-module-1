@@ -1,0 +1,152 @@
+.company {
+  .title {
+    margin-bottom: 0;
+  }
+
+  &__submenu {
+    width: 550px;
+    margin: 0 auto;
+
+    &_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 550px;
+      height: $menu_height;
+
+      &_link {
+        cursor: pointer;
+        background-color: rgba(200, 200, 200, 0);
+        padding: 15px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $main_color;
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    height: auto;
+
+    &_logo {
+      width: 200px;
+      position: relative;
+      top: -110px;
+      left: -40px;
+
+      @media screen and (max-width: 992px) {
+        left: 0px;
+        top: -80px;
+      }
+    }
+    &_text {
+      position: relative;
+      width: 310px;
+      top: 80px;
+      left: -40px;
+
+      text-align: start;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+
+      @media screen and (max-width: 992px) {
+        left: -100px;
+        width: 450px;
+      }
+    }
+    &_div {
+      width: 50%;
+      height: 450px;
+      background-image: url(../images/company/worker.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 992px) {
+        width: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &-card {
+      display: flex;
+      align-items: flex-start;
+      width: 360px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: $text_color;
+
+      &_logo {
+        margin-top: 5px;
+      }
+
+      &_title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0 0 10px 20px;
+      }
+
+      &_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0 0 10px 20px;
+      }
+
+      .cost-relative {
+        position: relative;
+        left: -20px;
+      }
+    }
+  }
+
+  &__button {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    &_btn {
+      color: #ffffff;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      margin: 0 auto;
+      padding-right: 5px;
+      width: 310px;
+      height: 55px;
+      border: 0;
+      border-radius: 3px;
+
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+
+      opacity: 1;
+      background: $main_color;
+      transition: opacity 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

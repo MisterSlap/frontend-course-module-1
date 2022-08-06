@@ -1,0 +1,110 @@
+.faq {
+  // .faq__list
+
+  background-color: $main_color;
+  border-radius: 7px;
+  margin-top: 0;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 992px) {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .white {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+  }
+
+  &__details {
+    max-width: 1000px;
+    width: 100%;
+    height: 80px;
+    min-width: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+
+    &:focus {
+      outline: 0;
+    }
+
+    & > &_quest {
+      list-style-type: none;
+    }
+
+    &_img {
+      position: absolute;
+      right: 30px;
+      top: 32px;
+      transition: 0.3s ease-in-out;
+    }
+
+    &_quest {
+      padding: 30px 20px 30px 20px;
+      font-weight: 700;
+      background: #eeeef3;
+      font-size: 18px;
+      line-height: 21px;
+      color: $text-color;
+      border-radius: 3px;
+      cursor: pointer;
+      .faq__details_img {
+        transition: 0.3s transform ease-in-out;
+        stroke: $text_color;
+      }
+
+      .faq__details &:hover {
+        background-color: #fff;
+        color: $main_color;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        .faq__details_img {
+          stroke: $main_color;
+        }
+      }
+      .faq__details[open] &:focus {
+        background-color: #fff;
+        color: $text_color;
+        z-index: 1;
+        border-radius: 3px 3px 0 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+        .faq__details_img {
+          transform: rotate(180deg);
+          stroke: $text_color;
+        }
+      }
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &[open] {
+        background-color: #fff;
+      }
+    }
+
+    &_answer {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      background-color: #fff;
+      color: #000000;
+      padding: 30px 20px 30px 20px;
+      border-radius: 0 0 3px 3px;
+      z-index: 1;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 800px;
+      width: 100%;
+    }
+  }
+}

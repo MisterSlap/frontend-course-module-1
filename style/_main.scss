@@ -1,0 +1,107 @@
+.main {
+  margin-top: 600px;
+
+  // .title {
+  //   @include title-text;
+  // }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__content {
+    user-select: none;
+
+    width: 590px;
+    height: 270px;
+
+    margin: 3px;
+
+    border-radius: 3px;
+
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 50px;
+    }
+
+    &_image {
+      width: 68px;
+    }
+
+    &_head {
+      padding: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      color: $text_color;
+
+      width: 275px;
+    }
+
+    .size {
+      width: 300px;
+    }
+
+    &_text {
+      padding-top: 20px;
+      width: 300px;
+
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      color: $text_color;
+
+      &_houses {
+        width: 260px;
+      }
+
+      &_corps {
+        width: 340px;
+      }
+    }
+  }
+}
+
+.window {
+  background: linear-gradient(to left, transparent, white 52%),
+    url('../images/main/img-window.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loggia {
+  background: linear-gradient(to left, transparent, white 52%),
+    url('../images/main/img-loggia.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house {
+  background: linear-gradient(to left, transparent, white 52%),
+    url('../images/main/img-house.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.corporate {
+  background: linear-gradient(to left, transparent, white 52%),
+    url('../images/main/img-corporate.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
