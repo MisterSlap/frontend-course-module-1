@@ -1,6 +1,6 @@
-# Frontend_course_module-2
+# Frontend_course_module-1
 
-Innopolis Frontend course, module 2 - CSS lessons.
+Innopolis Frontend course, module 1 - CSS lessons.
 
 ## Getting started
 
